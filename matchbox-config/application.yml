@@ -16,6 +16,7 @@ spring:
       hibernate.dialect: org.hibernate.dialect.PostgreSQL95Dialect
 hapi:
   fhir:
+    staticLocation: file:/apps/
     implementationguides:
       cda:
         url: https://github.com/ahdis/cda-core-2.0/releases/download/v0.0.3-dev/package.tgz
