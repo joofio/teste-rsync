@@ -51,5 +51,5 @@ jobs:
         run: rsync -avz . ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USER }}/
       
       - name: Restart Docker
-        run: ssh ${{ secrets.SSH_USER }}@{{ secrets.SSH_HOST }} 'docker restart my-matchbox'
+        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 'docker restart my-matchbox'
 
